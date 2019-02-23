@@ -1,0 +1,17 @@
+{% extends 'base.html' %} <!-- 모든 태그에 비해서 우선순위가 높은 extends 태그! -->
+      
+{% block contents %}
+<br>
+<div class="container">
+    <form method="POST">
+    {% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <br>
+        <input class="btn btn-dark" type="submit" value="제출하기">
+    </form>
+</div>
+
+
+{% endblock %}

@@ -35,7 +35,19 @@
         </li>
         </ul>
     </div>
+    <div class="dropdown-menu" aria=labelledby="navbarDropdown">
+        <a class="dropdown=item" id="logoutbtn" href="#">
+        <form id="logout" method="POST" action="{%url 'logout'%}">
+            {% csrf_token %}<input type="hidden"/>
+        </form>
+    </div>
+    <script>
+        $('#logoutbtn'.on("click", function(){
+            $('#logout').submit():
+        });
+    </script>
     </nav>
+
 {% block contents %}
-{% endblock %}
+{% endblock %}    
 </body>

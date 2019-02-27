@@ -9,3 +9,7 @@ pytz==2018.9
 six==1.12.0
 text-unidecode==1.2
 whitenoise==4.1.2
+<<<<<<< HEAD
+=======
+python-3.7.2
+>>>>>>> d747cdb16d1a7c68b3afaadc17ccbe16bc7a5af5

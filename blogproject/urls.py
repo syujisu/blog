@@ -21,10 +21,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 import accounts.views
 from django.conf.urls import url
-import login.views 
+
 
 urlpatterns = [
-    path('login/', login.views.home2,name="home2"),
     path('admin/', admin.site.urls),
     path('', blogapp.views.home, name="home"),
     path('blog/<int:blog_id>',blogapp.views.detail, name="datail"),
